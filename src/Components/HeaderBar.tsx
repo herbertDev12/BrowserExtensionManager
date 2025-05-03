@@ -2,7 +2,7 @@ export default function HeaderBar() {
   return (
     <header className="
       fixed top-0 w-full bg-white shadow-md z-50
-   
+      rounded-xl
       mx-4 my-4                 
       sm:mx-6 sm:my-5           
       md:mx-8 md:my-6           
