@@ -1,4 +1,8 @@
-export default function CustomButton() {
+interface CustomButtonProps{
+  buttonName : string
+}
+
+export default function CustomButton({buttonName} : CustomButtonProps) {
   return (
     <button className="
       w-full max-w-xs md:max-w-md lg:max-w-lg 
@@ -10,7 +14,7 @@ export default function CustomButton() {
       flex items-center justify-center         
       px-6 py-3                                           
       ">
-      Iniciar sesión
+      {buttonName}
     </button>
   );
 }

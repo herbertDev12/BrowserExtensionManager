@@ -11,8 +11,9 @@ export default function App() {
         text-center text-gray-800 text-2xl font-bold ">
         Extensions List
       </div>
-      
-      <FiterBar/>    
+      <div>
+        <FiterBar/> 
+      </div>     
     </div>
 
   )
