@@ -1,15 +1,23 @@
 import CustomButton from "./ui/CustomButton";
+import CustomSwitch from "./ui/CustomSwitch"
 
 interface ExtensionCardProps {
   cardName: string;
   imageSrc: string;
   cardDescription: string;
+  
+  switchChecked?: boolean;
+  onSwitchChange?: (checked: boolean) => void;
+  switchDisabled?: boolean;
 }
 
 export default function ExtensionCard({
   cardName,
   imageSrc,
-  cardDescription
+  cardDescription,
+  switchChecked = false,
+  onSwitchChange,
+  switchDisabled = false,
 }: ExtensionCardProps) {
   return (
     <div className="w-85 min-h-48 bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300 
@@ -33,11 +41,16 @@ export default function ExtensionCard({
         {cardDescription}
       </p>
 
-      <div className="absolute bottom-4 left-[calc(5px_+_10px)]"> 
-        
+      <div className="absolute bottom-4 left-[calc(5px_+_10px)]">   
         <CustomButton
-          buttonName="Remove"
-          
+          buttonName="Remove"/>
+      </div>
+
+      <div className="absolute bottom-4 left-[calc(200px_+_50px)]">
+        <CustomSwitch
+          initialChecked={switchChecked}
+          onChange={onSwitchChange}
+          disabled={switchDisabled}
         />
       </div>
     </div>
