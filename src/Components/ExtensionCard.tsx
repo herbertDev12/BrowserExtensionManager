@@ -26,7 +26,6 @@ export default function ExtensionCard({
       <div className="row-span-2">
         <img 
           src={imageSrc}
-          alt={cardName}
           className="w-16 h-16 object-contain rounded-lg"
         />
       </div>
