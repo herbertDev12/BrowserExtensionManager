@@ -20,7 +20,7 @@ export default function ExtensionCard({
   switchDisabled = false,
 }: ExtensionCardProps) {
   return (
-    <div className="w-85 min-h-48 bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300 
+    <div className="w-85 min-h-48 bg-white dark:bg-gray-800 rounded-xl shadow-md p-6 hover:shadow-lg transition-shadow duration-300 
                    grid grid-cols-[auto_1fr] grid-rows-[auto_auto_auto] gap-x-4 relative">
       
       <div className="row-span-2">
@@ -31,12 +31,12 @@ export default function ExtensionCard({
       </div>
 
       
-      <h3 className="text-xl font-semibold text-gray-800 col-start-2">
+      <h3 className="text-xl font-semibold text-gray-800 dark:text-white col-start-2">
         {cardName}
       </h3>
       
-      <p className="text-gray-600 text-sm leading-relaxed col-start-2 
-                   -pl-4 border-l-2 border-white -mt-6">
+      <p className="text-gray-600 dark:text-white text-sm leading-relaxed col-start-2 
+                   -pl-4 border-l-2 border-white dark:border-gray-800 -mt-6">
         {cardDescription}
       </p>
 

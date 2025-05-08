@@ -3,7 +3,7 @@ import DarkThemeButton from "./DarkThemeButton"
 export default function HeaderBar() {
   return (
     <header className="
-      fixed top-0 w-full bg-white shadow-md z-50
+      fixed top-0 w-full bg-white dark:bg-gray-800 shadow-md z-50
       rounded-xl
       mx-4 my-4                 
       sm:mx-6 sm:my-5           
@@ -11,7 +11,7 @@ export default function HeaderBar() {
       lg:mx-10 lg:my-8          
       xl:mx-12 xl:my-10">
         
-      <div className="fixed w-full bg-white text-white shadow-lg flex justify-center
+      <div className="fixed w-full bg-white text-white dark:bg-gray-800 shadow-lg flex justify-center
               top-4 left-4 right-4  
               m:top-6 sm:left-6 sm:right-6  
               md:top-8 md:left-8 md:right-8  
