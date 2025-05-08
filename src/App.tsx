@@ -2,10 +2,11 @@ import './App.css'
 import HeaderBar from './Components/HeaderBar'
 import FiterBar from './Components/FilterBar'
 import ExtensionGrid from './Components/ExtensionGrid'
+import { DarkModeProvider } from './context/DarkThemeContext'
 
 export default function App() {
   return (
-    <div> 
+    <DarkModeProvider> 
       <HeaderBar />
       <div className=" text-gray-800 text-3xl font-bold fixed z-50 top-[18%] left-[50%] transform flex -translate-x-1/2 -translate-y-1 gap-2
                  md:top-[20%] md:left-[15%] md:-translate-x-1/3 md:-translate-y-1/5
@@ -15,7 +16,7 @@ export default function App() {
       </div>
       <FiterBar/>   
       <ExtensionGrid/>
-    </div>
+    </DarkModeProvider>
 
   )
 }
