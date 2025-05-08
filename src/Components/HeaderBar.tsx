@@ -1,3 +1,5 @@
+import DarkThemeButton from "./DarkThemeButton"
+
 export default function HeaderBar() {
   return (
     <header className="
@@ -27,15 +29,7 @@ export default function HeaderBar() {
         </div>
 
         <div className="w-full h-15 flex max-w-screen-2xl px-4 items-center gap-90">
-          <button className="h-auto max-h-12 !bg-gray-300
-                      justify-center 
-                      p-2 sm:p-3 md:p-4"        
-          >
-            <img
-              src='/src/assets/images/icon-moon.svg'
-              alt="Theme button"
-            ></img>
-          </button>
+          <DarkThemeButton/>
         </div>
       
       </div>
